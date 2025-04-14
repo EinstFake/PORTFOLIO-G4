@@ -13,7 +13,7 @@ font-size: 24px;
 transition: 0.3s color;
 }
 
-.Message{
+.login-button{
     background-color: #009970;
     color: #fff;
     font-size: 14px;
@@ -23,7 +23,7 @@ transition: 0.3s color;
     transition: 0.3s background-color;
 }
 
-.Message:hover{
+.login-button:hover{
     background-color: #00b383;
 }
 
@@ -41,6 +41,7 @@ transition: 0.3s color;
     color: #666777;
     font-weight: 500;
     position: relative;
+    margin: 0 10px;
 }
 
 .nav-link:hover,
