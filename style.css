@@ -1,5 +1,8 @@
+
+
+
 .navbar{
-    background-color: #fff;
+    background-color: #f5f5dc;
     height: 80px;
     margin: 20px;
     border-radius: 16px;
@@ -98,4 +101,165 @@ transition: 0.3s color;
 
 .hero-section h2{
     font-size: 1.2em;
+}
+
+
+
+.AboutMe {
+    margin-top: 30%;
+}
+
+.main{
+    width: 100%;
+    min-height: 300px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 20px -15px black;
+    z-index: 1;
+    transition: transform .7s;
+}
+
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid #009970;
+    margin: -90px auto 0;
+    background: white;
+}
+
+.service-logo img{
+    width: 50px;
+    margin-top: 30px;
+}
+
+.service h4{
+    height: 35px;
+    width: 80%;
+    margin: 50px auto;
+    background: white;
+    position: relative;
+}
+
+.service h4::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, white, #009970);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+
+.service h4::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #009970, white);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.shadow1{
+    height: 200px;
+    width: 80%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px black;
+    transition: transform .7s;
+}
+
+.shadow2{
+    height: 200px;
+    width: 64%;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+
+.main:hover .service {
+    transform: translateY(-50px);
+}
+
+.main:hover .shadow1 {
+    transform: translateY(-25px);
+}
+
+.main:hover .shadow2 {
+    transform: translateY(-5px);
+}
+
+
+span{
+    color: #009970;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: '';
+    color: #009970;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #666777;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "Yapper";
+    }
+    21%, 40%{
+        content: "Developer";
+    }
+    41%, 60%{
+        content: "Programmer";
+    }
+    61%, 80%{
+        content: "Youtuber";
+    }
+    81%, 100%{
+        content: "GIS-Student";
+    }
 }
