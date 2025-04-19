@@ -2,8 +2,8 @@
 
 
 .navbar{
-    background-color: #f5f5dc;
-    height: 80px;
+    background-color: #f5f5dca6;
+    height: 60px;
     margin: 20px;
     border-radius: 16px;
     padding: 0.5rem;
@@ -73,7 +73,7 @@ transition: 0.3s color;
 
 
 .hero-section{
-    background: url(hero.jpg) no-repeat center;
+    background: url(hero2.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -87,6 +87,7 @@ transition: 0.3s color;
     right: 0;
     left: 0;
     bottom: 0;
+    height: 100%;
 }
 
 .hero-section .container{
@@ -248,18 +249,38 @@ span{
 
 @keyframes words{
     0%, 20%{
-        content: "Yapper";
+        content: "yapper";
     }
     21%, 40%{
-        content: "Developer";
+        content: "developer";
     }
     41%, 60%{
-        content: "Programmer";
+        content: "editor";
     }
     61%, 80%{
-        content: "Youtuber";
+        content: "youtuber";
     }
     81%, 100%{
-        content: "GIS-Student";
+        content: "student";
     }
+}
+
+
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+.home-img{
+    border-radius: 50%;
+    transform: translateX(190px);
+}
+
+.home-img img{
+    position: relative;
+    width: 26vw;
+    border-radius: 50%;
 }
