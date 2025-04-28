@@ -107,7 +107,7 @@ transition: 0.3s color;
 
 
 .AboutMe {
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 .main{
@@ -203,10 +203,6 @@ transition: 0.3s color;
 
 .main:hover .shadow1 {
     transform: translateY(-25px);
-}
-
-.main:hover .shadow2 {
-    transform: translateY(-5px);
 }
 
 
