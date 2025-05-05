@@ -1,6 +1,6 @@
 
 
-
+/* NAVBAR VINO */
 .navbar{
     background-color: #f5f5dca6;
     height: 60px;
@@ -70,13 +70,19 @@ transition: 0.3s color;
         width: 100%;
     }
 }
+/* END NAVBAR */
 
-
+/* HERO VINO */
 .hero-section{
     background: url(hero2.jpg) no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
 }
 
 .hero-section:before{
@@ -87,7 +93,7 @@ transition: 0.3s color;
     right: 0;
     left: 0;
     bottom: 0;
-    height: 100%;
+    height: 102.8%;
 }
 
 .hero-section .container{
@@ -104,9 +110,77 @@ transition: 0.3s color;
     font-size: 1.2em;
 }
 
+span{
+    color: #009970;
+}
+
+.typing-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span{
+    position: relative;
+}
+
+.typing-text span::before{
+    content: '';
+    color: #009970;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid rgba(0, 0, 0, 0);
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor{
+    to{
+        border-left: 3px solid #666777;
+    }
+}
+
+@keyframes words{
+    0%, 20%{
+        content: "yapper";
+    }
+    21%, 40%{
+        content: "developer";
+    }
+    41%, 60%{
+        content: "human";
+    }
+    61%, 80%{
+        content: "youtuber";
+    }
+    81%, 100%{
+        content: "student";
+    }
+}
 
 
-.AboutMe {
+
+.home-img{
+    border-radius: 50%;
+    transform: translateX(190px);
+}
+
+.home-img img{
+    position: relative;
+    width: 26vw;
+    border-radius: 50%;
+}
+/* END HERO */
+
+
+/* .AboutMe {
     margin-top: 20%;
 }
 
@@ -203,84 +277,14 @@ transition: 0.3s color;
 
 .main:hover .shadow1 {
     transform: translateY(-25px);
-}
+} */
 
 
-span{
-    color: #009970;
-}
-
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-
-.typing-text span{
-    position: relative;
-}
-
-.typing-text span::before{
-    content: '';
-    color: #009970;
-    animation: words 20s infinite;
-}
-
-.typing-text span::after{
-    content: "";
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid rgba(0, 0, 0, 0);
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-
-@keyframes cursor{
-    to{
-        border-left: 3px solid #666777;
-    }
-}
-
-@keyframes words{
-    0%, 20%{
-        content: "yapper";
-    }
-    21%, 40%{
-        content: "developer";
-    }
-    41%, 60%{
-        content: "editor";
-    }
-    61%, 80%{
-        content: "youtuber";
-    }
-    81%, 100%{
-        content: "student";
-    }
-}
 
 
-.hero-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8rem;
-    background-color: black;
-}
 
-.home-img{
-    border-radius: 50%;
-    transform: translateX(190px);
-}
 
-.home-img img{
-    position: relative;
-    width: 26vw;
-    border-radius: 50%;
-}
-
+/* SERVICES DENNIS */
 p,a,h1,h2,h3,h4,h5,h6,ul,li {
 	margin: 0;
 	padding: 0;
@@ -289,7 +293,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
 .section-services {
 	font-family: "Poppins", sans-serif;
 	background-color: #009970;
-	padding-top: 115px;
+	padding-top: 80px;
     padding-bottom: 120px;
     color:#202020;
 }
@@ -326,7 +330,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     transform: translateX(30px);
 	width: 10px;
 	height: 3px;
-	background-color: #504f93;
+	background-color: #000000;
     border-radius: 3px;
 }
 
@@ -358,7 +362,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     width: 150px;
     height: 150px;
     background-color: #000000 ;
-    border: 6px solid red;
+    border: 6px solid #00ffee;
     border-radius: 50%;
     opacity: 0.5;
     z-index: 10;
@@ -441,3 +445,111 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
 .section-services .single-service:hover a:after {
 	background-color: #fff;
 }
+/* END SERVICES */
+
+/* ABOUTME VINO */
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #004d40;
+    --text-color: white;
+    --main-color: #00ffee;
+    --box-color: #e0e0e0;
+}
+
+
+.aboutme {
+    background:  var(--second-bg-color);
+}
+
+.aboutme-box{
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutme .heading{
+    margin-bottom: 3rem;
+}
+
+.aboutme-box img{
+    width: 5rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.aboutme-item{
+    min-height: 500px;
+    max-width: 320px;
+    background: rgb(#3a3a3a, 0.5);
+    background-color: #d2d2d2;
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 1rem;
+    padding: 20px 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    color: rgb(0, 0, 0);
+    transition: 0.4s ease-in-out;
+}
+
+.aboutme-item:hover{
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.aboutme p{
+    font-size: 1rem;
+}
+
+
+
+.aboutme .header-section .title {
+    margin-top: 3rem;
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+    color: black;
+}
+
+.aboutme .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #000000 ;
+    border-radius: 3px;
+}
+
+.aboutme .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #000000;
+    border-radius: 3px;
+}
+/* END ABOUTME */
