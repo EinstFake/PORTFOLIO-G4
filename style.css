@@ -386,7 +386,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
 }
 
 .aboutme-item{
@@ -422,7 +422,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
 
 
 .aboutme .header-section .title {
-    margin-top: 3rem;
+    margin-top: 7rem;
 	position: relative;
     padding-bottom: 14px;
     margin-bottom: 25px;
