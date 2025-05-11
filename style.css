@@ -400,7 +400,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     min-height: 450px;
     max-width: 320px;
     background: rgb(#3a3a3a, 0.5);
-    background-color: #d2d2d2;
+    background-color: #ffffff;
     border: 3px solid rgba(238, 238, 238, 0.2);
     border-radius: 2rem;
     margin: 0 1rem;
@@ -469,7 +469,7 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 footer .social-icons {
@@ -492,3 +492,84 @@ footer .copyright {
     margin-top: 10px;
 }
 /* END FOOTER */
+
+/* PORTFOLIO */
+.container-resume1 {
+   display: flex;
+}
+
+.container-resume {
+    background-color: #004d40;
+}
+
+.project-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+  }
+
+  .project-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  }
+
+  .project-icon img {
+    width: 50%;
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: filter 0.3s ease-in-out;
+  }
+
+  .project-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+
+  .project-desc {
+    color: #6c757d;
+  }
+
+  .project-icon img:hover {
+    filter: brightness(0.7); /* Membuat gelap */
+  }
+
+  .container .header-section {
+	margin-bottom: 34px;
+}
+
+.container-resume .header-section .title {
+	position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 25px;
+	font-weight: 700;
+    font-size: 32px;
+}
+
+.container-resume .header-section .title:before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 50px;
+	height: 3px;
+	background-color: #000000 ;
+    border-radius: 3px;
+}
+
+.container-resume .header-section .title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(30px);
+	width: 10px;
+	height: 3px;
+	background-color: #000000;
+    border-radius: 3px;
+}
