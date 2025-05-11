@@ -217,6 +217,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     margin-bottom: 25px;
 	font-weight: 700;
     font-size: 32px;
+    color: #ffff;
 }
 
 .section-services .header-section .title:before {
@@ -435,7 +436,7 @@ p,a,h1,h2,h3,h4,h5,h6,ul,li {
     margin-bottom: 25px;
 	font-weight: 700;
     font-size: 32px;
-    color: black;
+    color: #ffff;
 }
 
 .aboutme .header-section .title:before {
@@ -549,6 +550,7 @@ footer .copyright {
 	font-weight: 700;
     font-size: 32px;
     margin-top: 50px;
+    color: #ffff;
 }
 
 .container-resume .header-section .title:before {
